@@ -117,11 +117,7 @@ class _SecondPageState extends State<SecondPage> {
               SizedBox(
                 height: MediaQuery.of(context).size.width * 0.04,
               ),
-              // Container(
-              //   height: 100,
-              //   width: double.infinity,
-              //   color: Colors.green,
-              // )
+
               Row(
                 children: [
                   Container(
@@ -258,6 +254,136 @@ class _SecondPageState extends State<SecondPage> {
                                     ),
                                     Text(
                                       'Sunlight',
+                                      style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black.withOpacity(0.3)),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 18,
+                        ),
+                        Expanded(
+                          child: Container(
+                            height: 160,
+                            width: MediaQuery.of(context).size.width * 0.425,
+                            decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.15),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset: Offset(
+                                        0, 3), // changes position of shadow
+                                  ),
+                                ],
+                                color: Colors.pinkAccent.withOpacity(0.1),
+
+                                borderRadius: BorderRadius.circular(20)),
+                            padding: EdgeInsets.all(15),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  height: 56,
+                                  width: 56,
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(28),
+                                      color: Colors.pinkAccent.withOpacity(0.3)),
+                                  child: Icon(
+                                    Icons.height,
+                                    color: Colors.pinkAccent,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 78.0),
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        '18^',
+                                        style: TextStyle(
+                                            fontSize: 26,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      Text(
+                                        'Temperature',
+                                        style: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black.withOpacity(0.3)),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+
+              Padding(
+                padding: const EdgeInsets.only(top: 22.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          height: 160,
+                          width: MediaQuery.of(context).size.width * 0.425,
+                          decoration: BoxDecoration(
+
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.15),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset:
+                                  Offset(0, 3), // changes position of shadow
+                                ),
+                              ],
+                              color: Colors.blueAccent.withOpacity(0.1),
+                              borderRadius: BorderRadius.circular(20)),
+                          padding: EdgeInsets.all(15),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 56,
+                                width: 56,
+                                alignment: Alignment.center,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(28),
+                                    color: Colors.blueAccent.withOpacity(0.3)),
+                                child: Icon(
+                                  Icons.motion_photos_on_outlined,
+                                  color: Colors.blueAccent,
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 79.0),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      '05%',
+                                      style: TextStyle(
+                                          fontSize: 26,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Text(
+                                      'Tarang',
                                       style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.bold,
